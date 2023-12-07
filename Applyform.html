@@ -1,0 +1,225 @@
+<html>
+<head>
+  <title></title>
+  <link rel = "stylesheet" type = "text/css" href = "CSS/careers.css">
+   <link rel = "stylesheet" type = "text/css" href = "CSS/applyform.css">
+
+<link rel = "stylesheet" type = "text/css" href = "CSS/skitter.styles.css">
+ <script src ="js/jquery-1.6.3.min.js"></script>
+ <script src ="js/jquery.easing.1.3.js"></script>
+  <script src ="js/jquery.animate-colors-min.js"></script>
+   <script src ="js/jquery.skitter.min.js"></script>
+    <script src ="js/highlight.js"></script>
+    <script>
+      $(document).ready(function(){
+        var options = {};
+        if (document.location.search) {
+          var array = document.location.search.split('=');
+          var param = array[0].replace('?','');
+          var value = array[1];
+          if (param == 'animation'){
+            options.animation = value;
+          }
+          else if (param == 'type_navigaton'){
+            if (value == 'dots_preview'){
+              $('.border_box').CSS({'marginBottom':'40px'});
+              options['dots'] = true;
+              options['preview'] = true;
+            }
+            else {
+              options[value] = true;
+              if (value == 'dots') $ ('.border_box').CSS({'marginBottom': '40px'});
+            }
+          }
+        }
+        $('.box_skitter_large').skitter(options);
+        //Highlight
+        $('pre.code').highlight({source:1, zebra:1, indent:'space', list:'ol'});
+      });
+    </script>
+</head>
+<body>
+  <div class = "Container">
+    <div class = "headcon">
+      <div class = "logo">
+        <img src = "images/logo.png" alt ="" width = "300" height = "110" /> 
+      </div>
+      <div class ="headright"><br>
+        <small> For more information, please call:</small></br>
+        <label> 123-456-7890</label>
+
+      </div>
+    </div>
+    <div class = "navbg">
+      <div class = "nav_inside">
+        <ul> 
+          <li><a href ="Home.html.html">Home</a></li>
+          <li><a href ="AboutUs.html">About Us</a></li>
+          <li><a href ="Services.html">Services</a></li>
+          <li><a href ="Careers.html">Careers</a></li>
+          <li><a href ="Resources.html">Resources</a></li>
+          <li><a href ="Contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class ="flashcon">
+    <div class ="box_skitter box_skitter_large" style= "z-index:0;">
+      <ul>
+        <li> <a href="#blindHeight"><img src = "./images/f1.jpeg" class="random"/></a></li>
+        <li> <a href="#blindHeight"><img src = "./images/f2.jpeg" class="random"/></a></li>
+        <li> <a href="#blindHeight"><img src = "./images/f3.jpeg" class="random"/></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "midboxcon">
+    <div class = "midbox1">
+      <img src = "images/midbox1.jpg" alt ="" width = "333" height = "187" /> 
+    </div>
+    <div class = "midbox2">
+      <img src = "images/midbox2.jpg" alt ="" width = "333" height = "187" /> 
+    </div>
+    <div class = "midbox3">
+      <img src = "images/midbox3.jpg" alt ="" width = "334" height = "187" /> 
+    </div>
+     <div class="about-section">
+  <h1>CAREERS</h1>
+  <p>Our diverse international development professionals range from recent graduate students to seasoned experts who have worked in a variety of country contexts. Visit our Arlington, Virginia headquarters or one of our 45+ project offices worldwide, and you will meet staff who are dedicated, energized and passionate about finding solutions to some of the world’s most vexing challenges.</p>
+  <h1>INTERNSHIP PROGRAM</h1>
+  <p><b>Interested in interning at MSI?</b></p>
+  <p>We have a year-round, paid internship program that provides interns with an opportunity to gain practical skills in various aspects of international development, including contract compliance, project management, strategic communications, recruitment, business development and more. Interns can work up to 35 hours per week and gain hands-on experience. We fill many of our entry-level openings from our intern pool, making MSI a great place to start a development career..</p>
+
+       <title>MSI Careers</title>
+    <header>
+        <h1>Welcome to MSI Careers</h1>
+    </header>
+    
+    <section class="job-listings">
+        <h2>Current Job Openings</h2>
+        <div class="job">
+            <h3>Software Developer</h3>
+            <p>MSI is seeking a talented software developer to join our team. If you have a passion for coding and want to work on exciting projects, apply now!</p>
+             <a href="Applyform.html">Apply Now</a>
+        </div>
+        <div class="job">
+            <h3>Marketing Manager</h3>
+            <p>We are looking for an experienced marketing manager to lead our marketing efforts. Join us and help shape our brand's future.</p>
+            <a href="Applyform.html">Apply Now</a>
+        </div>
+        <!-- Add more job listings here -->
+    </section>
+  </div>
+    </head>
+<form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+  <body>
+  <fieldset>
+    <legend>Job</legend>
+    <label>
+    CAREERS APPLICATION
+      <select name="Application for" required>
+         <option>Jobs Function</option>
+        <option>Manager</option>
+        <option>Secretary</option>
+        <option>Assesstant</option>
+      </select>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Personal data</legend>
+    <div class="two-cols">
+      <label>
+        First name *
+        <input type="text" name="First name" required>
+      </label>
+      <label>
+        Family name *
+        <input type="text" name="Family name" required>
+      </label>
+    </div>
+    <div class="two-cols">
+      <label>
+        Citizenship
+        <input type="text" name="Citizenship">
+      </label>
+      <label>
+        Date of birth
+        <input type="date" name="Date of birth">
+      </label>
+    </div>
+    <label>
+      Address
+      <input type="text" name="Address">
+    </label>
+    <div class="two-cols">
+      <label>
+        ZIP Code
+        <input type="text" name="ZIP">
+      </label>
+      <label>
+        City
+        <input type="text" name="City">
+      </label>
+    </div>
+    <div class="two-cols">
+      <label>
+        Phone *
+        <input type="tel" name="Phone" required>
+      </label>
+      <label>
+        Email address *
+        <input type="email" name="Email" required>
+      </label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Application documents</legend>
+    <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+    <div class="two-cols">
+      <label>
+        Application letter
+        <input type="file" name="Application letter" accept=".doc,.docx,.pdf">
+      </label>
+      <label>
+        Curriculum 
+        <input type="file" name="Curriculum vitae" accept=".doc,.docx,.pdf">
+      </label>
+    </div>
+    <p>Possible file types: DOC, PDF. Maximum file size: 10 MB.</p>
+  </fieldset>
+  <div class="btns">
+    <input type="text" name="_gotcha" value="" style="display:none;">
+    <input type="submit" value="Submit application">
+  </div>
+</form>
+ <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="facebook.com">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="twitter.com">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="linkedin.com">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#instagram.com">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="Home.html.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="AboutUs.html">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="Services.html">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="Careers.html">Careers</a></li>
+      <li class="menu__item"><a class="menu__link" href="Resources.html">Resources</a></li>
+      <li class="menu__item"><a class="menu__link" href="Contact.html">Contact Us</a></li>
+
+    </ul>
+    <p>&copy;2023 MSI | Entroliso Mark kevin</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</footer>
+
+</body>
+</html>
